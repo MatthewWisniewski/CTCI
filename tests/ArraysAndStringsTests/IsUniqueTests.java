@@ -21,7 +21,7 @@ public class IsUniqueTests {
     }
 
     @Test
-    public void isUniqueEmptyString() {
+    public void isUniqueEmptyStringTest() {
         assertTrue(IsUnique.isUnique(""), "Returning false with isUnique for an empty string");
         assertTrue(IsUnique.isUniqueNoDataStructures(""), "Returning false with isUniqueNoDataStructure for an empty string");
     }
