@@ -18,6 +18,11 @@ class PalindromePermutationTest {
     }
 
     @Test
+    public void testIsPalindromicPermutationEmptyString() {
+        assertTrue(PalindromePermutation.isPalindromicPermutation(""));
+    }
+
+    @Test
     public void testIsPalindromicPermutationIgnoresSpaces() {
         assertTrue(PalindromePermutation.isPalindromicPermutation("a b a"));
         assertTrue(PalindromePermutation.isPalindromicPermutation(" abb"));
