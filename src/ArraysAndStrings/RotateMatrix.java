@@ -5,11 +5,11 @@ public class RotateMatrix {
     // 90 degree clockwise reflection is equivalent to a reflection in y = -x,
     // followed by a reflection in y = 0
 
-    public static String[][] RotateMatrix(String[][] matrix) {
+    public static String[][] RotateMatrix(String[][] matrix) { // O(n^2)
 
         String temp;
 
-        // Reflection across y = -x
+        // Reflection across y = -x   O(n^2)
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i; j < matrix.length; j++) {
                 temp = matrix[i][j];
@@ -18,7 +18,7 @@ public class RotateMatrix {
             }
         }
 
-        // Reflection across y = 0
+        // Reflection across y = 0    O(n^2)
 
         int midPoint = matrix.length / 2;
 
